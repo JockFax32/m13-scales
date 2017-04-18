@@ -3,10 +3,10 @@
 */
 $(function() {
     // Read in prepped_data file
-    d3.csv('data/prepped_data.csv', function(error, allData) {
+    d3.csv('./data/prepped_data.csv', function(error, allData) {
         // Variables that should be accesible within the namespace
         var xScale, yScale, currentData;
-
+        console.log(allData)
         // Track the sex (male, female) and drinking type (any, binge) in variables
         var sex = 'female';
         var type = 'binge';
