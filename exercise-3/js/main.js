@@ -146,4 +146,7 @@ $(function() {
                 return drawHeight - yScale(d.percent);
             });
     });
+    $("lable").on('click', function(d){
+        console.log('Hello')
+    })
 });
